@@ -1,0 +1,6 @@
+projection;
+strict ( 1 );
+
+define behavior for ZC_PILOTS_04 alias Pilot
+{
+}

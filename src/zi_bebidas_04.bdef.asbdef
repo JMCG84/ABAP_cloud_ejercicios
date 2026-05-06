@@ -1,0 +1,27 @@
+managed implementation in class ZBP_I_bebidas_04 unique;
+strict ( 1 );
+
+define behavior for ZI_bebidas_04 alias bebidas
+persistent table zbebidas_04
+lock master
+authorization master ( global )
+
+{
+  create; // <-- Esto habilita el botón "Create"
+  update; // <-- Esto habilita el botón "Edit"
+  delete; // <-- Esto habilita el botón "borrar"
+
+
+// field ( readonly ) Codigo;
+field ( mandatory : create ) Codigo;
+
+  mapping for zbebidas_04
+    {
+      Codigo  = codigo;
+      Nombre  = nombre;
+      Tipo    = tipo;
+      Origen  = origen;
+      Grados  = graduacion;
+      Precio  = precio;
+    }
+}

@@ -1,0 +1,221 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'PersonID'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'PersonID'
+
+annotate view ZC_PERSONAS_04 with
+{
+  @EndUserText.label: 'ID Persona'
+  @UI.facet: [ {
+    label: 'General Information',
+    id: 'GeneralInfo',
+    purpose: #STANDARD,
+    position: 10 ,
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 ,
+    label: 'ID Persona'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 ,
+    label: 'ID Persona'
+  } ]
+  @UI.selectionField: [ {
+    position: 10
+  } ]
+  PersonID;
+
+  @EndUserText.label: 'Nombre'
+  @UI.identification: [ {
+    position: 20 ,
+    label: 'Nombre'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 ,
+    label: 'Nombre'
+  } ]
+  @UI.selectionField: [ {
+    position: 20
+  } ]
+  FirstName;
+
+  @EndUserText.label: 'Apellidos'
+  @UI.identification: [ {
+    position: 30 ,
+    label: 'Apellidos'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 ,
+    label: 'Apellidos'
+  } ]
+  @UI.selectionField: [ {
+    position: 30
+  } ]
+  LastName;
+
+  @EndUserText.label: 'Día de cumpleaños'
+  @UI.identification: [ {
+    position: 40 ,
+    label: 'Día que nació'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 ,
+    label: 'Nacimiento'
+  } ]
+  BirthDate;
+  
+  @EndUserText.label: 'Género'
+  // --- INICIO VINCULACIÓN VALUE HELP ---
+  @Consumption.valueHelpDefinition: [{ entity: { name: 'ZCE_GENERO_VH', element: 'Value' } }]
+   // --- FIN VINCULACIÓN VALUE HELP ---
+  @UI.identification: [ {
+    position: 50 ,
+    label: 'Género'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 ,
+    label: 'Género'
+  } ]
+  @UI.selectionField: [ {
+    position: 50
+  } ]
+  Gender;
+
+
+  @EndUserText.label: 'Correo Electrónico'
+  @UI.identification: [ {
+    position: 60 ,
+    label: 'Email'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 ,
+    label: 'Email'
+  } ]
+  @UI.selectionField: [ {
+    position: 60
+  } ]
+  Email;
+
+  @EndUserText.label: 'Teléfono'
+  @UI.identification: [ {
+    position: 70 ,
+    label: 'Teléfono'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 ,
+    label: 'Teléfono'
+  } ]
+  @UI.selectionField: [ {
+    position: 70
+  } ]
+  Phone;
+
+  @UI.identification: [ {
+    position: 80
+  } ]
+  @UI.lineItem: [ {
+    position: 80
+  } ]
+  @UI.selectionField: [ {
+    position: 80
+  } ]
+  Country;
+
+  @EndUserText.label: 'Calle'
+  @UI.identification: [ {
+    position: 90 ,
+    label: 'Calle'
+  } ]
+  @UI.lineItem: [ {
+    position: 90 ,
+    label: 'Calle'
+  } ]
+  @UI.selectionField: [ {
+    position: 90
+  } ]
+  Street;
+
+  @EndUserText.label: 'Ciudad'
+  @UI.identification: [ {
+    position: 100 ,
+    label: 'Ciudad'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 ,
+    label: 'Ciudad'
+  } ]
+  @UI.selectionField: [ {
+    position: 100
+  } ]
+  City;
+
+  @EndUserText.label: 'Código Postal'
+  @UI.identification: [ {
+    position: 110 ,
+    label: 'Código Postal'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 ,
+    label: 'Código Postal'
+  } ]
+  @UI.selectionField: [ {
+    position: 110
+  } ]
+  PostalCode;
+
+  @EndUserText.label: 'Estado Activo'
+  @UI.identification: [ {
+    position: 120 ,
+    label: '¿Está Activo?'
+  } ]
+  @UI.lineItem: [ {
+    position: 120 ,
+    label: 'Activo'
+  } ]
+  @UI.selectionField: [ {
+    position: 120
+  } ]
+  IsActive;
+
+  @UI.identification: [ {
+    position: 130
+  } ]
+  @UI.lineItem: [ {
+    position: 130
+  } ]
+  CreatedBy;
+
+  @UI.identification: [ {
+    position: 140
+  } ]
+  @UI.lineItem: [ {
+    position: 140
+  } ]
+  CreatedAt;
+
+  @UI.identification: [ {
+    position: 150
+  } ]
+  @UI.lineItem: [ {
+    position: 150
+  } ]
+  LastChangedBy;
+
+  @UI.identification: [ {
+    position: 160
+  } ]
+  @UI.lineItem: [ {
+    position: 160
+  } ]
+  LastChangedAt;
+
+  @UI.identification: [ {
+    position: 170
+  } ]
+  @UI.lineItem: [ {
+    position: 170
+  } ]
+  LocalLastChangedAt;
+}

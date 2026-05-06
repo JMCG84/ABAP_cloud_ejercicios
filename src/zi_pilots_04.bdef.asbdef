@@ -1,0 +1,19 @@
+managed implementation in class ZBP_I_PILOTS_04 unique;
+strict ( 1 );
+
+define behavior for ZI_PILOTS_04 alias Pilot
+persistent table zpilots_04
+lock master
+authorization master ( global )
+{
+  field ( readonly ) Dorsal;
+
+  mapping for zpilots_04
+  {
+    Dorsal       = dorsal;
+    Nombre       = nombre;
+    Equipo       = equipo;
+    Nacionalidad = nacionalidad;
+    Puntos       = puntos;
+  }
+}

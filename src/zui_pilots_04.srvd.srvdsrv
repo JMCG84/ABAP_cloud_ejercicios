@@ -1,0 +1,4 @@
+@EndUserText.label: 'servicio definido'
+define service ZUI_pilots_04 {
+  expose ZC_PILOTS_04;
+}

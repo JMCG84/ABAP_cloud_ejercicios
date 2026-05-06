@@ -1,0 +1,4 @@
+@EndUserText.label: 'servicio definido'
+define service ZUI_bebidas_04 {
+  expose ZC_bebidas_04;
+}
